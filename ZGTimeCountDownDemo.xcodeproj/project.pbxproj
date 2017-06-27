@@ -18,6 +18,9 @@
 		233B6E4F1F01E9A600CA654B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233B6E4D1F01E9A600CA654B /* Main.storyboard */; };
 		233B6E511F01E9A600CA654B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233B6E501F01E9A600CA654B /* Assets.xcassets */; };
 		233B6E541F01E9A600CA654B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233B6E521F01E9A600CA654B /* LaunchScreen.storyboard */; };
+		233B6E5D1F01E9D500CA654B /* ZGTimeCountDownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 233B6E5C1F01E9D500CA654B /* ZGTimeCountDownModel.m */; };
+		233B6E631F01EA4D00CA654B /* ZGTimeCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 233B6E621F01EA4D00CA654B /* ZGTimeCountDownCell.m */; };
+		233B6E661F01EB3B00CA654B /* ZGTimeCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 233B6E651F01EB3B00CA654B /* ZGTimeCountDownManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		233B6E501F01E9A600CA654B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233B6E531F01E9A600CA654B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		233B6E551F01E9A600CA654B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233B6E5B1F01E9D500CA654B /* ZGTimeCountDownModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTimeCountDownModel.h; sourceTree = "<group>"; };
+		233B6E5C1F01E9D500CA654B /* ZGTimeCountDownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimeCountDownModel.m; sourceTree = "<group>"; };
+		233B6E611F01EA4D00CA654B /* ZGTimeCountDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTimeCountDownCell.h; sourceTree = "<group>"; };
+		233B6E621F01EA4D00CA654B /* ZGTimeCountDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimeCountDownCell.m; sourceTree = "<group>"; };
+		233B6E641F01EB3B00CA654B /* ZGTimeCountDownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTimeCountDownManager.h; sourceTree = "<group>"; };
+		233B6E651F01EB3B00CA654B /* ZGTimeCountDownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTimeCountDownManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +98,12 @@
 				233B6E441F01E9A600CA654B /* AppDelegate.m */,
 				233B6E461F01E9A600CA654B /* ViewController.h */,
 				233B6E471F01E9A600CA654B /* ViewController.m */,
-				233B6E4D1F01E9A600CA654B /* Main.storyboard */,
-				233B6E501F01E9A600CA654B /* Assets.xcassets */,
-				233B6E521F01E9A600CA654B /* LaunchScreen.storyboard */,
-				233B6E551F01E9A600CA654B /* Info.plist */,
+				233B6E5B1F01E9D500CA654B /* ZGTimeCountDownModel.h */,
+				233B6E5C1F01E9D500CA654B /* ZGTimeCountDownModel.m */,
+				233B6E611F01EA4D00CA654B /* ZGTimeCountDownCell.h */,
+				233B6E621F01EA4D00CA654B /* ZGTimeCountDownCell.m */,
+				233B6E641F01EB3B00CA654B /* ZGTimeCountDownManager.h */,
+				233B6E651F01EB3B00CA654B /* ZGTimeCountDownManager.m */,
 				233B6E491F01E9A600CA654B /* UIDeviceInfo */,
 				233B6E401F01E9A600CA654B /* Supporting Files */,
 			);
@@ -102,6 +113,10 @@
 		233B6E401F01E9A600CA654B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				233B6E4D1F01E9A600CA654B /* Main.storyboard */,
+				233B6E501F01E9A600CA654B /* Assets.xcassets */,
+				233B6E521F01E9A600CA654B /* LaunchScreen.storyboard */,
+				233B6E551F01E9A600CA654B /* Info.plist */,
 				233B6E411F01E9A600CA654B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -188,8 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				233B6E481F01E9A600CA654B /* ViewController.m in Sources */,
+				233B6E661F01EB3B00CA654B /* ZGTimeCountDownManager.m in Sources */,
 				233B6E451F01E9A600CA654B /* AppDelegate.m in Sources */,
 				233B6E421F01E9A600CA654B /* main.m in Sources */,
+				233B6E631F01EA4D00CA654B /* ZGTimeCountDownCell.m in Sources */,
+				233B6E5D1F01E9D500CA654B /* ZGTimeCountDownModel.m in Sources */,
 				233B6E4C1F01E9A600CA654B /* UIDevice+Info.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
